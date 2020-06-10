@@ -19,11 +19,11 @@ public class SingletonTest {
 
 class Renban{
 	private static Renban Renban = new Renban();
-	private int number = 0;
+	private int number;
 	DecimalFormat format = new DecimalFormat("0000");
 
 	private Renban() {
-
+		number = 0;
 	}
 
 	public static Renban getInstance() {
