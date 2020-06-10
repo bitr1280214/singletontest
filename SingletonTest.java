@@ -31,7 +31,7 @@ class Renban{
 	}
 
 	public String getNumber() {
-		if(number < 10000) {
+		if(number > 10000) {
 			return format.format(number);
 		}
 		number = number + 1;
